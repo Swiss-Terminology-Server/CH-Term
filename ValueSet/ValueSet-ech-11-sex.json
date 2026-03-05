@@ -1,0 +1,88 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ech-11-sex",
+  "url" : "http://fhir.ch/ig/ch-core/ValueSet/ech-11-sex",
+  "version" : "3.3.0",
+  "name" : "ECH11Sex",
+  "title" : "eCH-011 Sex",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2018-11-12",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  },
+  {
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/",
+      "use" : "work"
+    }]
+  }],
+  "description" : "eCH-011 defines these sex types",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CH"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.ch/ig/ch-core/CodeSystem/ech-11-sex",
+      "concept" : [{
+        "code" : "1",
+        "display" : "männlich",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "männlich"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "masculin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "sesso maschile"
+        }]
+      },
+      {
+        "code" : "2",
+        "display" : "weiblich",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "weiblich"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "féminin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "sesso femminile"
+        }]
+      },
+      {
+        "code" : "3",
+        "display" : "unbestimmt",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "unbestimmt"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "indéterminé"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "indeterminato"
+        }]
+      }]
+    }]
+  }
+}

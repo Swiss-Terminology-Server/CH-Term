@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ch-core-encounter-participation-type",
+  "url" : "http://fhir.ch/ig/ch-core/ValueSet/ch-core-encounter-participation-type",
+  "version" : "3.3.0",
+  "name" : "ChCoreEncounterParticipationType",
+  "title" : "ChCoreEncounterParticipationType",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-04-06",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  },
+  {
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter. In Switzerland the primary care physician is added to the extensible base ValueSet.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CH"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/encounter-participant-type"]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+      "concept" : [{
+        "code" : "PCP",
+        "display" : "primary care physician"
+      }]
+    }]
+  }
+}

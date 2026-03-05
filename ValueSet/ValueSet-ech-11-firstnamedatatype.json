@@ -1,0 +1,104 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ech-11-firstnamedatatype",
+  "url" : "http://fhir.ch/ig/ch-core/ValueSet/ech-11-firstnamedatatype",
+  "version" : "3.3.0",
+  "name" : "ECH11FirstNameDataTypes",
+  "title" : "eCH-011 FirstNameDataTypes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2018-11-12",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  },
+  {
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/",
+      "use" : "work"
+    }]
+  }],
+  "description" : "eCH-011 defines different nameData Types, this ValueSet is the subset for the firstnames",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CH"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.ch/ig/ch-core/CodeSystem/ech-11",
+      "concept" : [{
+        "code" : "officialFirstName",
+        "display" : "Amtliche Vornamen (zwingend), BFS-221",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Amtliche Vornamen"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Prénoms officiels"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Nomi ufficiali"
+        }]
+      },
+      {
+        "code" : "callName",
+        "display" : "Rufname, BFS-222",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Rufname"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Prénom usuel"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Nome abituale"
+        }]
+      },
+      {
+        "code" : "firstNameOnForeignPassport",
+        "display" : "Vornamen im ausländischen Pass, BFS-223",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Vornamen im ausländischen Pass"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Prénoms selon passeport étranger"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Nomi riportati sul passaporto straniero"
+        }]
+      },
+      {
+        "code" : "declaredForeignFirstName",
+        "display" : "Vorname(n) gemäss Deklaration, BFS-224",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Vorname(n) gemäss Deklaration"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Prénoms selon déclaration"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Nomi dichiarati"
+        }]
+      }]
+    }]
+  }
+}

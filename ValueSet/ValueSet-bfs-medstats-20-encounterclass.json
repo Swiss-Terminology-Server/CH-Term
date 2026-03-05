@@ -1,0 +1,88 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "bfs-medstats-20-encounterclass",
+  "url" : "http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-20-encounterclass",
+  "version" : "3.3.0",
+  "name" : "BfsMedstats20Encounterclass",
+  "title" : "BFS Medizinische Statistik - 20 1.3.V01 - Behandlungsart / Type de prise en charge / Genere di trattamento",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2019-01-01",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  },
+  {
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/",
+      "use" : "work"
+    }]
+  }],
+  "description" : "BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Angabe der Behandlungsart",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CH"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-20-encounterclass",
+      "concept" : [{
+        "code" : "1",
+        "display" : "ambulant",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "ambulant"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Ambulatoire"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "ambulatoriale"
+        }]
+      },
+      {
+        "code" : "3",
+        "display" : "stationär",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "stationär"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Hospitalisation"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "stazionario"
+        }]
+      },
+      {
+        "code" : "9",
+        "display" : "unbekannt",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "unbekannt"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Inconnu"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "sconosciuto"
+        }]
+      }]
+    }]
+  }
+}

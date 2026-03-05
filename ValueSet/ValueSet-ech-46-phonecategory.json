@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ech-46-phonecategory",
+  "url" : "http://fhir.ch/ig/ch-core/ValueSet/ech-46-phonecategory",
+  "version" : "3.3.0",
+  "name" : "ECH46PhoneCategory",
+  "title" : "eCH-0046 Phone Category",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-03-10",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  },
+  {
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/",
+      "use" : "work"
+    }]
+  }],
+  "description" : "eCH-0046 defines these types of phone categories",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CH"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.ch/ig/ch-core/CodeSystem/ech-46-phonecategory"
+    }]
+  }
+}

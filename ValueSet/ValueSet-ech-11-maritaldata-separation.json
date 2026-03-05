@@ -1,0 +1,72 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ech-11-maritaldata-separation",
+  "url" : "http://fhir.ch/ig/ch-core/ValueSet/ech-11-maritaldata-separation",
+  "version" : "3.3.0",
+  "name" : "ECH11MaritaldataSeparation",
+  "title" : "eCH-011 MaritalData Separation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-10-14",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  },
+  {
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/",
+      "use" : "work"
+    }]
+  }],
+  "description" : "eCH-011 defines maritalData separation types",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CH"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritaldata-separation",
+      "concept" : [{
+        "code" : "1",
+        "display" : "freiwillig getrennt",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "freiwillig getrennt"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Séparation de fait"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Separato/a volontariamente"
+        }]
+      },
+      {
+        "code" : "2",
+        "display" : "gerichtlich getrennt",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "gerichtlich getrennt"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Séparation légale"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Separato/a giudizialmente"
+        }]
+      }]
+    }]
+  }
+}
