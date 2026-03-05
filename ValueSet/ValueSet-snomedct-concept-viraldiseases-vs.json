@@ -1,0 +1,53 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "snomedct-concept-viraldiseases-vs",
+  "url" : "http://fhir.ch/ig/ch-term/ValueSet/snomedct-concept-viraldiseases-vs",
+  "version" : "3.3.0",
+  "name" : "SnomedCTConceptViralDiseases",
+  "title" : "Snomed CT Concept Viral Diseases",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-15T10:47:47+00:00",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  },
+  {
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/",
+      "use" : "work"
+    }]
+  }],
+  "description" : "The list of viral diseases by Snomed CT codes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CH"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "34014006"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "34014006"
+      }]
+    }]
+  }
+}

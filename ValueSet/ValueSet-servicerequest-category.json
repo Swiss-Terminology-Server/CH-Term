@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "servicerequest-category",
+  "url" : "http://fhir.ch/ig/ch-term/ValueSet/servicerequest-category",
+  "version" : "3.3.0",
+  "name" : "VSServiceRequestCategory",
+  "title" : "ServiceRequest Category",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-15T10:47:47+00:00",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  },
+  {
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes for the category of service request used to define the requested service.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CH"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.ch/ig/ch-term/CodeSystem/servicerequest-category"
+    }]
+  }
+}
